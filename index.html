@@ -232,7 +232,8 @@
         <p class="text-brand-muted mb-8">Tell us where you'd like to go and we'll take care of everything else. No itinerary too big, no group too small.</p>
         
        <form 
-  onsubmit="event.preventDefault(); const form = this; fetch('https://formspree.io/f/xbgljnqz', { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } }).then(res => { if(res.ok) { alert('Thank you for your enquiry! We will reach out shortly.'); form.reset(); } else { alert('There was an issue sending your request. Please try again.'); } });" 
+  action="https://formspree.io/f/xbgljnqz" 
+  method="POST" 
   class="space-y-4"
 >
   <input 
