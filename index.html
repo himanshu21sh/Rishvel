@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rishvel — Day Experiences Across India</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              cream: '#FAF7F2',
+              terracotta: '#C85A32',
+              dark: '#1C1917',
+              muted: '#78716C',
+              card: '#F5F0EB'
+            }
+          },
+          fontFamily: {
+            serif: ['Cormorant Garamond', 'serif'],
+            sans: ['DM Sans', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-brand-cream text-brand-dark font-sans antialiased">
+
+  <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-brand-cream/90 backdrop-blur-md border-b border-stone-200/60">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="#" class="font-serif text-3xl font-bold tracking-tight text-brand-dark">
+        Rishvel<span class="text-brand-terracotta">.</span>
+      </a>
+      
+      <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-stone-700">
+        <a href="#experiences" class="hover:text-brand-terracotta transition-colors">Experiences</a>
+        <a href="#why-us" class="hover:text-brand-terracotta transition-colors">Why Rishvel</a>
+        <a href="#stories" class="hover:text-brand-terracotta transition-colors">Stories</a>
+        <a href="#contact" class="hover:text-brand-terracotta transition-colors">Contact</a>
+      </nav>
+
+      <a href="#contact" class="bg-brand-dark text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-brand-terracotta transition-colors">
+        Enquire Now
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+    <!-- Working Hero Background Image -->
+    <div class="absolute inset-0 z-0">
+      <img 
+        src="https://picsum.photos/id/1018/1920/1080" 
+        alt="Scenic Landscape Background" 
+        class="w-full h-full object-cover"
+      >
+      <div class="absolute inset-0 bg-gradient-to-r from-stone-900/80 via-stone-900/50 to-transparent"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-6 relative z-10 text-white py-24">
+      <span class="text-brand-terracotta font-semibold tracking-widest text-xs uppercase bg-white/10 backdrop-blur-md px-4 py-1.5 rounded-full inline-block mb-6 border border-white/20">
+        Day Experiences Across India
+      </span>
+      <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl font-bold leading-tight max-w-3xl mb-6">
+        Discover India, One Day at a Time.
+      </h1>
+      <p class="text-lg md:text-xl text-stone-200 max-w-xl mb-10 font-light leading-relaxed">
+        Experiences across multiple cities from India — to misty hills, heritage palaces, coffee estates, and hidden waterfalls. No planning needed. Just show up.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4">
+        <a href="#experiences" class="bg-brand-terracotta text-white px-8 py-4 rounded-full font-medium hover:bg-opacity-90 transition-all text-center">
+          Explore Experiences
+        </a>
+        <a href="#contact" class="border border-white/40 backdrop-blur-md text-white px-8 py-4 rounded-full font-medium hover:bg-white hover:text-brand-dark transition-all text-center">
+          Enquire Now
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Experiences -->
+  <section id="experiences" class="py-24 max-w-7xl mx-auto px-6">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-16">
+      <div>
+        <span class="text-brand-terracotta font-semibold text-sm uppercase tracking-wider">Featured Experiences</span>
+        <h2 class="font-serif text-4xl md:text-5xl font-bold mt-2">Handpicked day experiences across India</h2>
+      </div>
+      <p class="text-brand-muted max-w-md mt-4 md:mt-0">
+        Every experience is thoughtfully curated — from the route to the guide. All you need is a sense of adventure.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Card 1 -->
+      <div class="bg-brand-card rounded-2xl overflow-hidden group hover:shadow-xl transition-all duration-300">
+        <div class="relative h-64 overflow-hidden">
+          <img src="https://picsum.photos/id/1015/800/600" alt="Nandi Hills Sunrise" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <span class="absolute top-4 left-4 bg-white/90 backdrop-blur-md text-xs font-semibold px-3 py-1 rounded-full">Most popular</span>
+        </div>
+        <div class="p-6">
+          <h3 class="font-serif text-2xl font-bold mb-2">Nandi Hills Sunrise</h3>
+          <p class="text-brand-muted text-sm mb-6">Chase the sunrise above the clouds at one of Karnataka's most iconic hilltop retreats, just 60 km from Bangalore.</p>
+          <div class="flex items-center justify-between pt-4 border-t border-stone-200">
+            <span class="text-xs font-medium text-stone-500">⏱ 1 day</span>
+            <a href="#contact" class="text-brand-terracotta font-semibold text-sm hover:underline">View experience &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-brand-card rounded-2xl overflow-hidden group hover:shadow-xl transition-all duration-300">
+        <div class="relative h-64 overflow-hidden">
+          <img src="https://picsum.photos/id/1036/800/600" alt="Coorg Coffee & Mist" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <span class="absolute top-4 left-4 bg-white/90 backdrop-blur-md text-xs font-semibold px-3 py-1 rounded-full">Nature escape</span>
+        </div>
+        <div class="p-6">
+          <h3 class="font-serif text-2xl font-bold mb-2">Coorg Coffee & Mist</h3>
+          <p class="text-brand-muted text-sm mb-6">Walk through fragrant coffee estates, breathe in the cool Coorg air, and discover why this hill station is called the Scotland of India.</p>
+          <div class="flex items-center justify-between pt-4 border-t border-stone-200">
+            <span class="text-xs font-medium text-stone-500">⏱ 1 day</span>
+            <a href="#contact" class="text-brand-terracotta font-semibold text-sm hover:underline">View experience &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-brand-card rounded-2xl overflow-hidden group hover:shadow-xl transition-all duration-300">
+        <div class="relative h-64 overflow-hidden">
+          <img src="https://picsum.photos/id/1040/800/600" alt="Mysore Heritage Day" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <span class="absolute top-4 left-4 bg-white/90 backdrop-blur-md text-xs font-semibold px-3 py-1 rounded-full">Culture & history</span>
+        </div>
+        <div class="p-6">
+          <h3 class="font-serif text-2xl font-bold mb-2">Mysore Heritage Day</h3>
+          <p class="text-brand-muted text-sm mb-6">Explore the grandeur of Mysore Palace, vibrant Devaraja Market, and the serene Chamundi Hills — all in one unforgettable day.</p>
+          <div class="flex items-center justify-between pt-4 border-t border-stone-200">
+            <span class="text-xs font-medium text-stone-500">⏱ 1 day</span>
+            <a href="#contact" class="text-brand-terracotta font-semibold text-sm hover:underline">View experience &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Rishvel -->
+  <section id="why-us" class="py-24 bg-stone-900 text-white">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div class="relative">
+        <img src="https://picsum.photos/id/1059/1000/800" alt="Local guide with travellers" class="rounded-2xl object-cover w-full h-[500px]">
+        <div class="absolute -bottom-6 -right-6 bg-brand-terracotta p-6 rounded-2xl shadow-xl text-white max-w-xs">
+          <span class="block font-serif text-4xl font-bold">500+</span>
+          <span class="text-sm font-light">Happy travellers guided across curated itineraries</span>
+        </div>
+      </div>
+
+      <div>
+        <span class="text-brand-terracotta font-semibold text-sm uppercase tracking-wider">Why Rishvel</span>
+        <h2 class="font-serif text-4xl md:text-5xl font-bold mt-2 mb-8">Travel without the hassle</h2>
+        
+        <div class="space-y-6">
+          <div class="border-b border-stone-800 pb-6">
+            <h3 class="text-xl font-bold mb-2">Deep local expertise</h3>
+            <p class="text-stone-400 text-sm">Our guides are born and raised in Karnataka. They know the hidden viewpoints, the best dhabas, and the stories behind every landmark.</p>
+          </div>
+          <div class="border-b border-stone-800 pb-6">
+            <h3 class="text-xl font-bold mb-2">Completely hassle-free</h3>
+            <p class="text-stone-400 text-sm">Transport, entry tickets, meals — all arranged. You just show up at the pickup point and leave the rest to us.</p>
+          </div>
+          <div class="border-b border-stone-800 pb-6">
+            <h3 class="text-xl font-bold mb-2">Thoughtfully curated</h3>
+            <p class="text-stone-400 text-sm">Every itinerary is designed to give you the best of a destination in a single day — no rushed stops, no tourist traps.</p>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-2">Trusted by travellers</h3>
+            <p class="text-stone-400 text-sm">From solo explorers to family groups, domestic visitors to international guests — Rishvel is built for every kind of curious traveller.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="stories" class="py-24 max-w-7xl mx-auto px-6">
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <span class="text-brand-terracotta font-semibold text-sm uppercase tracking-wider">Traveller Stories</span>
+      <h2 class="font-serif text-4xl md:text-5xl font-bold mt-2">What our guests say</h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-brand-card p-8 rounded-2xl flex flex-col justify-between">
+        <p class="text-stone-700 italic mb-6">"The Coorg day trip was absolutely magical. Our guide knew every corner of the estate and made the whole day feel effortless. Already planning my next Rishvel tour."</p>
+        <div>
+          <h4 class="font-bold">Priya Menon</h4>
+          <span class="text-xs text-brand-muted">Mumbai, India</span>
+        </div>
+      </div>
+
+      <div class="bg-brand-card p-8 rounded-2xl flex flex-col justify-between">
+        <p class="text-stone-700 italic mb-6">"We were visiting Bangalore for a conference and squeezed in the Mysore tour. It was the highlight of our entire trip. Seamlessly organised from start to finish."</p>
+        <div>
+          <h4 class="font-bold">James Whitfield</h4>
+          <span class="text-xs text-brand-muted">London, UK</span>
+        </div>
+      </div>
+
+      <div class="bg-brand-card p-8 rounded-2xl flex flex-col justify-between">
+        <p class="text-stone-700 italic mb-6">"Nandi Hills at sunrise was breathtaking. Rishvel handled everything — pickup, breakfast, the works. This is how day tours should be done."</p>
+        <div>
+          <h4 class="font-bold">Arjun Sharma</h4>
+          <span class="text-xs text-brand-muted">Bangalore, India</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact CTA -->
+  <section id="contact" class="py-24 bg-brand-card relative">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <span class="text-brand-terracotta font-semibold text-sm uppercase tracking-wider">Let's Go</span>
+        <h2 class="font-serif text-4xl md:text-5xl font-bold mt-2 mb-6">Ready to explore India?</h2>
+        <p class="text-brand-muted mb-8">Tell us where you'd like to go and we'll take care of everything else. No itinerary too big, no group too small.</p>
+        
+        <form class="space-y-4" onsubmit="event.preventDefault(); alert('Thank you for your enquiry! We will reach out shortly.');">
+          <input type="text" placeholder="Your Name" required class="w-full px-5 py-3.5 rounded-xl border border-stone-300 bg-white focus:outline-none focus:ring-2 focus:ring-brand-terracotta">
+          <input type="email" placeholder="Email Address" required class="w-full px-5 py-3.5 rounded-xl border border-stone-300 bg-white focus:outline-none focus:ring-2 focus:ring-brand-terracotta">
+          <textarea rows="4" placeholder="Tell us about your trip plans or preferred experience..." class="w-full px-5 py-3.5 rounded-xl border border-stone-300 bg-white focus:outline-none focus:ring-2 focus:ring-brand-terracotta"></textarea>
+          <button type="submit" class="w-full bg-brand-terracotta text-white py-4 rounded-xl font-medium hover:bg-opacity-90 transition-all">
+            Plan My Experience
+          </button>
+        </form>
+      </div>
+
+      <div>
+        <img src="https://picsum.photos/id/1025/1000/800" alt="Travellers enjoying view" class="rounded-2xl object-cover h-[500px] w-full">
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-brand-dark text-stone-400 py-16 border-t border-stone-800">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+      <div>
+        <a href="#" class="font-serif text-3xl font-bold text-white tracking-tight mb-4 block">
+          Rishvel<span class="text-brand-terracotta">.</span>
+        </a>
+        <p class="text-sm leading-relaxed">Curated day experiences across India. We handle everything — you just show up and explore.</p>
+      </div>
+
+      <div>
+        <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Experiences</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#experiences" class="hover:text-white transition-colors">Nandi Hills Sunrise</a></li>
+          <li><a href="#experiences" class="hover:text-white transition-colors">Coorg Day Experience</a></li>
+          <li><a href="#experiences" class="hover:text-white transition-colors">Mysore Heritage</a></li>
+          <li><a href="#experiences" class="hover:text-white transition-colors">Shivanasamudra Falls</a></li>
+          <li><a href="#experiences" class="hover:text-white transition-colors">Sakleshpur Trek</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Company</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#why-us" class="hover:text-white transition-colors">About Rishvel</a></li>
+          <li><a href="#why-us" class="hover:text-white transition-colors">How It Works</a></li>
+          <li><a href="#contact" class="hover:text-white transition-colors">Contact Us</a></li>
+          <li><a href="#contact" class="hover:text-white transition-colors">Enquire Now</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Get in Touch</h4>
+        <ul class="space-y-2 text-sm">
+          <li>Bangalore, Karnataka, India</li>
+          <li><a href="mailto:himanshu@rishvel.com" class="text-brand-terracotta hover:underline">himanshu@rishvel.com</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-6 pt-8 border-t border-stone-800 flex flex-col md:flex-row justify-between text-xs text-stone-500">
+      <p>&copy; 2026 Rishvel. All rights reserved.</p>
+      <div class="space-x-4 mt-4 md:mt-0">
+        <a href="#" class="hover:text-stone-300">Privacy Policy</a>
+        <a href="#" class="hover:text-stone-300">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
