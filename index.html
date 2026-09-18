@@ -231,14 +231,38 @@
         <h2 class="font-serif text-4xl md:text-5xl font-bold mt-2 mb-6">Ready to explore India?</h2>
         <p class="text-brand-muted mb-8">Tell us where you'd like to go and we'll take care of everything else. No itinerary too big, no group too small.</p>
         
-        <form class="space-y-4" onsubmit="event.preventDefault(); alert('Thank you for your enquiry! We will reach out shortly.');">
-          <input type="text" placeholder="Your Name" required class="w-full px-5 py-3.5 rounded-xl border border-stone-300 bg-white focus:outline-none focus:ring-2 focus:ring-brand-terracotta">
-          <input type="email" placeholder="Email Address" required class="w-full px-5 py-3.5 rounded-xl border border-stone-300 bg-white focus:outline-none focus:ring-2 focus:ring-brand-terracotta">
-          <textarea rows="4" placeholder="Tell us about your trip plans or preferred experience..." class="w-full px-5 py-3.5 rounded-xl border border-stone-300 bg-white focus:outline-none focus:ring-2 focus:ring-brand-terracotta"></textarea>
-          <button type="submit" class="w-full bg-brand-terracotta text-white py-4 rounded-xl font-medium hover:bg-opacity-90 transition-all">
-            Plan My Experience
-          </button>
-        </form>
+       <form 
+  onsubmit="event.preventDefault(); const form = this; fetch('https://formspree.io/f/xbgljnqz', { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } }).then(res => { if(res.ok) { alert('Thank you for your enquiry! We will reach out shortly.'); form.reset(); } else { alert('There was an issue sending your request. Please try again.'); } });" 
+  class="space-y-4"
+>
+  <input 
+    type="text" 
+    name="name" 
+    placeholder="Your Name" 
+    required 
+    class="w-full px-5 py-3.5 rounded-xl border border-stone-300 bg-white focus:outline-none focus:ring-2 focus:ring-brand-terracotta"
+  >
+  <input 
+    type="email" 
+    name="email" 
+    placeholder="Email Address" 
+    required 
+    class="w-full px-5 py-3.5 rounded-xl border border-stone-300 bg-white focus:outline-none focus:ring-2 focus:ring-brand-terracotta"
+  >
+  <textarea 
+    name="message" 
+    rows="4" 
+    placeholder="Tell us about your trip plans or preferred experience..." 
+    required 
+    class="w-full px-5 py-3.5 rounded-xl border border-stone-300 bg-white focus:outline-none focus:ring-2 focus:ring-brand-terracotta"
+  ></textarea>
+  <button 
+    type="submit" 
+    class="w-full bg-brand-terracotta text-white py-4 rounded-xl font-medium hover:bg-opacity-90 transition-all"
+  >
+    Plan My Experience
+  </button>
+</form>
       </div>
 
       <div>
