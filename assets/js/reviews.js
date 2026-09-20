@@ -19,18 +19,34 @@
       .replace(/"/g, '&quot;');
   }
 
-  function instagramEmbedUrl(url) {
+  function parseInstagramReelUrl(url) {
     try {
-      const path = new URL(url).pathname.replace(/\/?$/, '/');
-      return `https://www.instagram.com${path}?utm_source=ig_embed&utm_campaign=loading`;
+      const parsed = new URL(url);
+      const match = parsed.pathname.match(/\/reel\/([^/]+)/i);
+      if (!match) return null;
+      const reelId = match[1];
+      const profileMatch = parsed.pathname.match(/^\/([^/]+)\/reel\//i);
+      const profile = profileMatch && profileMatch[1] !== 'reel' ? profileMatch[1] : null;
+      const canonicalUrl = profile
+        ? `https://www.instagram.com/${profile}/reel/${reelId}/`
+        : `https://www.instagram.com/reel/${reelId}/`;
+      return {
+        reelId,
+        canonicalUrl,
+        embedUrl: `https://www.instagram.com/reel/${reelId}/embed`,
+      };
     } catch {
-      return String(url);
+      return null;
     }
+  }
+
+  function isPublishedReview(review) {
+    return review.published !== false;
   }
 
   function getReviewsForContext(allReviews, options) {
     const { experienceSlug, homepage } = options || {};
-    return allReviews.filter((r) => {
+    return allReviews.filter(isPublishedReview).filter((r) => {
       if (experienceSlug) {
         return (r.experiences || []).includes(experienceSlug);
       }
@@ -71,23 +87,38 @@
   }
 
   function renderVideoCard(review) {
-    const embedUrl = instagramEmbedUrl(review.url);
+    const reel = parseInstagramReelUrl(review.url);
     const byline = [review.name, review.handle].filter(Boolean).join(' · ');
+    const embedBlock = reel
+      ? `<div class="instagram-reel-frame">
+            <iframe
+              class="instagram-reel-iframe"
+              src="${escapeHtml(reel.embedUrl)}"
+              title="Instagram reel${review.name ? ` by ${escapeHtml(review.name)}` : ''}"
+              loading="lazy"
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+              allowfullscreen
+              referrerpolicy="strict-origin-when-cross-origin"
+            ></iframe>
+          </div>`
+      : `<p class="text-sm text-brand-muted px-4 py-8 text-center">Video unavailable.</p>`;
+
+    const viewLink = reel
+      ? `<a href="${escapeHtml(reel.canonicalUrl)}" class="video-review-instagram-link" target="_blank" rel="noopener noreferrer">View on Instagram</a>`
+      : review.url
+        ? `<a href="${escapeHtml(review.url)}" class="video-review-instagram-link" target="_blank" rel="noopener noreferrer">View on Instagram</a>`
+        : '';
+
     return `
-      <article class="bg-brand-card rounded-2xl overflow-hidden flex flex-col h-full" data-review-id="${escapeHtml(review.id)}" data-video-review>
+      <article class="bg-brand-card rounded-2xl overflow-hidden flex flex-col h-full" data-review-id="${escapeHtml(review.id)}" data-video-review${reel ? ` data-reel-id="${escapeHtml(reel.reelId)}"` : ''}>
         <div class="video-review-embed-slot">
-          <div class="instagram-reel-frame">
-            <blockquote
-              class="instagram-media instagram-reel-embed"
-              data-instgrm-permalink="${escapeHtml(embedUrl)}"
-              data-instgrm-version="14"
-            >
-              <a href="${escapeHtml(embedUrl)}" target="_blank" rel="noopener noreferrer">View this reel on Instagram</a>
-            </blockquote>
-          </div>
+          ${embedBlock}
         </div>
         ${review.quote ? `<p class="text-stone-700 italic text-sm mt-4 px-4">&ldquo;${escapeHtml(review.quote)}&rdquo;</p>` : ''}
-        ${byline ? `<p class="font-bold text-sm mt-2 mb-4 px-4">${escapeHtml(byline)}</p>` : '<div class="mb-4"></div>'}
+        <div class="px-4 pb-4 mt-2 flex flex-col gap-2">
+          ${byline ? `<p class="font-bold text-sm">${escapeHtml(byline)}</p>` : ''}
+          ${viewLink}
+        </div>
       </article>`;
   }
 
@@ -137,7 +168,7 @@
 
   function normalizeInstagramReelFrames(container) {
     container.querySelectorAll('.instagram-reel-frame').forEach((frame) => {
-      const iframe = frame.querySelector('iframe');
+      const iframe = frame.querySelector('iframe.instagram-reel-iframe, iframe');
       if (!iframe) return;
       iframe.setAttribute('loading', 'lazy');
       iframe.style.border = '0';
@@ -150,6 +181,7 @@
   }
 
   function processInstagramEmbeds(container) {
+    normalizeInstagramReelFrames(container);
     if (!container.querySelector('.instagram-media')) return;
     loadInstagramScript();
     runInstagramProcess();
@@ -157,10 +189,6 @@
       runInstagramProcess();
       normalizeInstagramReelFrames(container);
     }, 600);
-    setTimeout(() => {
-      runInstagramProcess();
-      normalizeInstagramReelFrames(container);
-    }, 1500);
   }
 
   async function initTravellerStoriesSection(section) {
