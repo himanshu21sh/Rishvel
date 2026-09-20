@@ -1,0 +1,288 @@
+[
+  {
+    "id": "nandi-hills",
+    "slug": "nandi-hills",
+    "destination": "Nandi Hills",
+    "title": "Nandi Hills Sunrise",
+    "tagline": "Above the clouds before the city wakes — a quiet dawn at Karnataka's favourite hilltop.",
+    "shortDescription": "Chase the sunrise above the clouds at one of Karnataka's most iconic hilltop retreats, just 60 km from Bengaluru.",
+    "category": "Nature & Adventure",
+    "cardBadge": "Most popular",
+    "duration": "1 Day",
+    "startingLocation": "Bengaluru",
+    "heroImage": "https://picsum.photos/id/1015/1920/1080",
+    "gallery": [
+      "https://picsum.photos/id/1015/1200/800",
+      "https://picsum.photos/id/1036/1200/800"
+    ],
+    "featured": true,
+    "featuredOrder": 1,
+    "inquiryLabel": "Nandi Hills Sunrise",
+    "narrative": {
+      "heading": "The Experience",
+      "paragraphs": [
+        "An early start, a smooth drive through sleeping suburbs, and then the first light breaking over the Deccan plateau. This is Nandi Hills done properly — without the guesswork of parking, timing, or where to stand for the view.",
+        "Your Rishvel host keeps the pace unhurried: time for coffee, time for photographs, and time to simply watch the mist lift."
+      ],
+      "image": "https://picsum.photos/id/1015/1200/800"
+    },
+    "highlights": [
+      { "title": "Sunrise viewpoint", "description": "Curated spot away from the busiest crowds." },
+      { "title": "Heritage hilltop", "description": "Tipu's Drop and old fort walls with context from your host." },
+      { "title": "Breakfast stop", "description": "Local breakfast on the way back, timed after the peak rush." },
+      { "title": "Private travel", "description": "Door-to-door from Bengaluru in a comfortable vehicle." }
+    ],
+    "itineraries": [
+      {
+        "id": "default",
+        "label": "Day itinerary",
+        "stops": [
+          { "time": "04:30", "title": "Depart Bengaluru", "description": "Pickup from your location in the city." },
+          { "time": "06:00", "title": "Arrive Nandi Hills", "description": "Walk to the sunrise viewpoint as light builds." },
+          { "time": "08:00", "title": "Explore the hilltop", "description": "Fort walls, viewpoints, and quiet corners at your pace." },
+          { "time": "09:30", "title": "Breakfast", "description": "Local stop on the descent." },
+          { "time": "11:30", "title": "Return to Bengaluru", "description": "Drop-off at your preferred location." }
+        ]
+      }
+    ],
+    "practical": [
+      { "title": "Best time", "content": "October through February offers the clearest sunrise skies. Monsoon months can be dramatic but misty — dress in layers." },
+      { "title": "Getting there", "content": "All transport is included from Bengaluru. Pickup times are shared the day before your trip." },
+      { "title": "What to expect", "content": "An early morning with some walking on paved paths. Moderate hilltop breeze; bring a light jacket." },
+      { "title": "What to carry", "content": "Comfortable shoes, a warm layer, sunglasses, and a fully charged phone for photos." },
+      { "title": "Good to know", "content": "Weekend mornings can be busy at the summit; we adjust timing slightly when needed to keep the experience calm." }
+    ],
+    "audience": ["Couples", "Solo", "Photography", "Weekend", "Family"],
+    "inclusions": [
+      "Private transportation from Bengaluru",
+      "Rishvel host for the day",
+      "Curated route and timing",
+      "Breakfast stop (meal cost as per venue)"
+    ],
+    "pricing": {
+      "display": "Starting from ₹X,XXX per person",
+      "note": "Final pricing depends on group size and pickup location. Enquire for a tailored quote."
+    },
+    "faqs": [
+      { "question": "How early do we leave?", "answer": "Typically between 4:00 and 4:30 AM from central Bengaluru so we reach the hill before sunrise." },
+      { "question": "Is this suitable for children?", "answer": "Yes, with the understanding that it is an early start. We can adjust pace for families." },
+      { "question": "Is transportation included?", "answer": "Yes — private vehicle and driver for the full day from your Bengaluru pickup point." },
+      { "question": "Can the itinerary change?", "answer": "Weather or crowd conditions may mean small timing adjustments; your host will keep you informed." },
+      { "question": "Can we customize pickup?", "answer": "Yes. Share your location when you enquire and we will confirm feasibility." }
+    ],
+    "seo": {
+      "title": "Nandi Hills Sunrise Day Trip from Bengaluru | Rishvel",
+      "description": "A curated sunrise day at Nandi Hills from Bengaluru — private travel, local host, and a calm pace. Plan your experience with Rishvel.",
+      "ogImage": "https://picsum.photos/id/1015/1200/630"
+    }
+  },
+  {
+    "id": "coorg",
+    "slug": "coorg",
+    "destination": "Coorg",
+    "title": "Coorg Coffee & Mist",
+    "tagline": "Coffee estates, cool air, and the unhurried rhythm of the Western Ghats — in a single day.",
+    "shortDescription": "Walk through fragrant coffee estates, breathe in the cool Coorg air, and discover why this hill station is called the Scotland of India.",
+    "category": "Nature & Estates",
+    "cardBadge": "Nature escape",
+    "duration": "1 Day",
+    "startingLocation": "Bengaluru",
+    "heroImage": "https://picsum.photos/id/1036/1920/1080",
+    "gallery": [
+      "https://picsum.photos/id/1036/1200/800",
+      "https://picsum.photos/id/1040/1200/800"
+    ],
+    "featured": true,
+    "featuredOrder": 2,
+    "inquiryLabel": "Coorg Coffee & Mist",
+    "narrative": {
+      "heading": "The Experience",
+      "paragraphs": [
+        "Coorg in a day is only worth doing when someone else has already chosen the estate, the lunch table, and the road less congested. That is the Rishvel approach.",
+        "Expect mist, spice-scented air, and a host who knows which viewpoints are worth the stop — and which are simply tourist noise."
+      ],
+      "image": "https://picsum.photos/id/1036/1200/800"
+    },
+    "highlights": [
+      { "title": "Coffee estate walk", "description": "Guided time among plantations with context on cultivation and harvest." },
+      { "title": "Scenic Ghats drive", "description": "Comfortable route planning to maximize views, not mileage." },
+      { "title": "Local lunch", "description": "Coorg-style meal at a trusted local spot." },
+      { "title": "Private day travel", "description": "Full-day vehicle and host from Bengaluru." }
+    ],
+    "itineraries": [
+      {
+        "id": "default",
+        "label": "Day itinerary",
+        "stops": [
+          { "time": "06:00", "title": "Depart Bengaluru", "description": "Early start to make the most of Coorg's light and cooler hours." },
+          { "time": "10:00", "title": "Arrive in Coorg region", "description": "Coffee estate visit and gentle walk." },
+          { "time": "13:00", "title": "Lunch", "description": "Local Coorg cuisine at a curated venue." },
+          { "time": "15:00", "title": "Viewpoint & local stop", "description": "Scenic pause and optional local shopping." },
+          { "time": "20:00", "title": "Return to Bengaluru", "description": "Drop-off at your location." }
+        ]
+      }
+    ],
+    "practical": [
+      { "title": "Best time", "content": "Year-round; post-monsoon (September–February) is especially green and clear." },
+      { "title": "Getting there", "content": "Long day from Bengaluru — approximately 5–6 hours driving each way with planned breaks." },
+      { "title": "What to expect", "content": "Full day on the road with moderate walking on estate paths. Cooler than Bengaluru — carry a layer." },
+      { "title": "What to carry", "content": "Comfortable walking shoes, light rain layer in monsoon, motion sickness remedy if sensitive." },
+      { "title": "Food", "content": "Coorg pork curry, kadambuttu, and filter coffee are regional highlights — your host can suggest based on dietary preferences." }
+    ],
+    "audience": ["Couples", "Family", "Nature", "Weekend", "International Travellers"],
+    "inclusions": [
+      "Private transportation from Bengaluru",
+      "Rishvel host",
+      "Curated estate and lunch stops",
+      "Flexible pacing within the day"
+    ],
+    "faqs": [
+      { "question": "Is one day enough for Coorg?", "answer": "This experience focuses on a distilled best-of day — estates, scenery, and a proper local meal — rather than trying to cover everything." },
+      { "question": "Can vegetarians be accommodated?", "answer": "Yes. Share dietary needs when you enquire and we will plan lunch accordingly." },
+      { "question": "Is transportation included?", "answer": "Yes, private vehicle for the full journey from Bengaluru." },
+      { "question": "Can we start from Mysore instead?", "answer": "Contact us — alternate starting points may be possible with adjusted timing." },
+      { "question": "Can the route be customized?", "answer": "Minor adjustments are possible; major changes may require a multi-day plan." }
+    ],
+    "seo": {
+      "title": "Coorg Day Experience from Bengaluru | Rishvel",
+      "description": "A curated Coorg day trip — coffee estates, local flavours, and private travel from Bengaluru. Plan your Coorg experience with Rishvel.",
+      "ogImage": "https://picsum.photos/id/1036/1200/630"
+    }
+  },
+  {
+    "id": "mysore",
+    "slug": "mysore",
+    "destination": "Mysore",
+    "title": "Mysore Heritage Day",
+    "tagline": "An elegant journey through royal heritage, local flavours, and the quieter side of Mysore.",
+    "shortDescription": "Explore the grandeur of Mysore Palace, vibrant markets, and serene Chamundi Hills — curated into one unforgettable day from Bengaluru.",
+    "category": "Heritage & Culture",
+    "cardBadge": "Culture & history",
+    "duration": "1 Day",
+    "startingLocation": "Bengaluru",
+    "heroImage": "https://picsum.photos/id/1040/1920/1080",
+    "gallery": [
+      "https://picsum.photos/id/1040/1200/800",
+      "https://picsum.photos/id/1059/1200/800",
+      "https://picsum.photos/id/1025/1200/800"
+    ],
+    "featured": true,
+    "featuredOrder": 3,
+    "inquiryLabel": "Mysore Heritage Day",
+    "narrative": {
+      "heading": "The Experience",
+      "paragraphs": [
+        "Mysore rewards travellers who know where to linger — inside the palace courtyards, at a market flower stall, on the drive up Chamundi Hill when the city spreads below you. We built this day around those moments, not a checklist of every monument on a map.",
+        "Your Rishvel host handles timing, tickets guidance, and the small local stops that turn a sightseeing trip into something that feels personal and unhurried."
+      ],
+      "image": "https://picsum.photos/id/1040/1200/800"
+    },
+    "highlights": [
+      { "title": "Mysore Palace", "description": "Time inside the royal residence with context on architecture and daily life of the Wodeyars." },
+      { "title": "Local cuisine", "description": "A curated lunch featuring Mysore's distinctive flavours — not a generic tourist buffet." },
+      { "title": "Heritage streets", "description": "Short walks through markets and old quarters your host knows well." },
+      { "title": "Chamundi Hill", "description": "The classic viewpoint and temple approach, timed to avoid the worst crowds." },
+      { "title": "Devaraja Market", "description": "Colour, spice, and flowers — a sensory stop when the day's rhythm allows." },
+      { "title": "Private travel", "description": "Door-to-door from Bengaluru in a comfortable private vehicle." }
+    ],
+    "itineraries": [
+      {
+        "id": "default",
+        "label": "Curated day",
+        "stops": [
+          {
+            "time": "08:00",
+            "title": "Depart Bengaluru",
+            "description": "Pickup from your location. Coffee and comfort breaks en route as needed.",
+            "image": "https://picsum.photos/id/1018/800/500"
+          },
+          {
+            "time": "10:30",
+            "title": "Arrive in Mysore",
+            "description": "Brief orientation and first stop based on palace timings and crowd patterns."
+          },
+          {
+            "time": "11:00",
+            "title": "Mysore Palace",
+            "description": "Guided visit through the main halls and courtyards. Your host helps with flow and photography spots."
+          },
+          {
+            "time": "13:00",
+            "title": "Lunch",
+            "description": "Local restaurant serving Mysore-special dishes — dietary preferences accommodated when shared in advance."
+          },
+          {
+            "time": "14:30",
+            "title": "Local experience",
+            "description": "Market walk or heritage neighbourhood — tailored to your group's pace and interests."
+          },
+          {
+            "time": "16:30",
+            "title": "Chamundi Hill",
+            "description": "Drive up to the hilltop temple and viewpoint as the afternoon light softens."
+          },
+          {
+            "time": "18:00",
+            "title": "Return journey",
+            "description": "Drive back to Bengaluru with drop-off at your preferred location."
+          }
+        ]
+      }
+    ],
+    "practical": [
+      {
+        "title": "Best time",
+        "content": "October to March is ideal — pleasant for walking and palace visits. Dasara season is spectacular but busy; enquire early if you plan to travel during festival weeks."
+      },
+      {
+        "title": "Getting there",
+        "content": "Private vehicle from Bengaluru (approximately 3 hours each way with breaks). All driving is included; palace entry fees are paid locally unless otherwise confirmed."
+      },
+      {
+        "title": "What to expect",
+        "content": "A full day with moderate walking on palace and market floors. Dress for warm afternoons; temples and palace may require modest clothing and shoe removal where marked."
+      },
+      {
+        "title": "What to carry",
+        "content": "Comfortable walking shoes, sun protection, a light scarf for temple visits, and a bottle of water."
+      },
+      {
+        "title": "Food",
+        "content": "Try Mysore masala dosa, bisibele bath, and filter coffee. Your host will steer you toward trusted local kitchens rather than highway stops."
+      },
+      {
+        "title": "Shopping",
+        "content": "Mysore silk, sandalwood products, and market spices are popular. We allow time for browsing if you wish — no pressured shop stops."
+      },
+      {
+        "title": "Good to know",
+        "content": "Palace illumination (evening lights) is on specific days — ask when enquiring if you want to extend for the night view; it may affect return timing."
+      }
+    ],
+    "audience": ["Family", "Couples", "International Travellers", "Photography", "Culture", "Weekend"],
+    "inclusions": [
+      "Private transportation from Bengaluru",
+      "Rishvel host for the full day",
+      "Curated itinerary and timing",
+      "Local experiences and market heritage walk",
+      "Guidance on palace entry and local customs"
+    ],
+    "pricing": {
+      "display": "Starting from ₹X,XXX per person",
+      "note": "Pricing varies by group size and vehicle type. Share your details for an exact quote."
+    },
+    "faqs": [
+      { "question": "Is this experience suitable for families?", "answer": "Yes. The pace can be adjusted for children and older travellers; share your group's needs when you enquire." },
+      { "question": "Can the itinerary be customized?", "answer": "Within a day trip, we can emphasize palace, markets, or Chamundi Hill. Major additions may need a longer plan." },
+      { "question": "Is transportation included?", "answer": "Yes — private vehicle and driver for the entire day from Bengaluru." },
+      { "question": "Can we start from Bengaluru?", "answer": "This experience is designed with Bengaluru as the default starting point. Other cities may be possible on request." },
+      { "question": "Are palace tickets included?", "answer": "Entry fees are typically paid on site; your host will guide you through purchase. Confirm inclusions when you book." },
+      { "question": "Can we see the palace lit at night?", "answer": "Possible on select evenings with a later return. Mention this when you enquire so we can plan timing." }
+    ],
+    "seo": {
+      "title": "Mysore Heritage Day Trip from Bengaluru | Rishvel",
+      "description": "A curated Mysore day — palace, local flavours, Chamundi Hill, and private travel from Bengaluru. One canonical experience page. Plan with Rishvel.",
+      "ogImage": "https://picsum.photos/id/1040/1200/630"
+    }
+  }
+]

@@ -1,0 +1,197 @@
+/* Experiences — layout helpers beyond Tailwind utilities */
+
+.experience-timeline {
+  position: relative;
+  padding-left: 1.25rem;
+}
+
+.experience-timeline::before {
+  content: '';
+  position: absolute;
+  left: 0.35rem;
+  top: 0.5rem;
+  bottom: 0.5rem;
+  width: 2px;
+  background: linear-gradient(to bottom, #C85A32, #e7e5e4);
+}
+
+.experience-timeline-item {
+  position: relative;
+  padding-bottom: 2rem;
+}
+
+.experience-timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.experience-timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -1rem;
+  top: 0.35rem;
+  width: 10px;
+  height: 10px;
+  border-radius: 9999px;
+  background: #C85A32;
+  box-shadow: 0 0 0 4px #FAF7F2;
+}
+
+.experience-accordion details {
+  border-bottom: 1px solid #e7e5e4;
+}
+
+.experience-accordion summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 1.25rem 0;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.experience-accordion summary::-webkit-details-marker {
+  display: none;
+}
+
+.experience-accordion summary::after {
+  content: '+';
+  font-size: 1.25rem;
+  color: #C85A32;
+  flex-shrink: 0;
+}
+
+.experience-accordion details[open] summary::after {
+  content: '−';
+}
+
+.experience-sticky-cta {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 40;
+  padding: 0.75rem 1rem calc(0.75rem + env(safe-area-inset-bottom, 0px));
+  background: rgba(250, 247, 242, 0.95);
+  backdrop-filter: blur(12px);
+  border-top: 1px solid #e7e5e4;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.experience-sticky-cta.is-visible {
+  transform: translateY(0);
+}
+
+@media (min-width: 768px) {
+  .experience-sticky-cta {
+    display: none;
+  }
+}
+
+/* Traveller stories — filter tabs (homepage + experience pages) */
+
+.traveller-stories-filter {
+  padding: 0.5rem 1.25rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border: 1px solid #d6d3d1;
+  background: #fff;
+  color: #78716C;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.traveller-stories-filter.is-active {
+  background: #1C1917;
+  color: #fff;
+  border-color: #1C1917;
+}
+
+.traveller-stories-filter.hidden {
+  display: none;
+}
+
+/* Grid: wide enough columns for Instagram reel min-width (~326px) */
+.traveller-stories-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+@media (min-width: 700px) {
+  .traveller-stories-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1100px) {
+  .traveller-stories-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+[data-video-review] {
+  min-width: 0;
+}
+
+.video-review-embed-slot {
+  padding: 1rem 1rem 0;
+  background: #F5F0EB;
+  display: flex;
+  justify-content: center;
+}
+
+/* Fixed 9:16 frame — keeps reel thumbnails consistent in the grid */
+.instagram-reel-frame {
+  position: relative;
+  width: 100%;
+  max-width: 325px;
+  aspect-ratio: 9 / 16;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #1c1917;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.06);
+}
+
+.instagram-reel-frame .instagram-reel-embed {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+}
+
+.instagram-reel-frame iframe {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  border: 0 !important;
+  display: block !important;
+}
+
+.experience-detail-body {
+  padding-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+  .experience-detail-body {
+    padding-bottom: 0;
+  }
+}

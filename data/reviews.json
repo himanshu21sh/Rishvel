@@ -1,0 +1,65 @@
+[
+  {
+    "id": "coorg-priya-text",
+    "mediaType": "text",
+    "experiences": ["coorg"],
+    "showOnHomepage": true,
+    "quote": "The Coorg day trip was absolutely magical. Our guide knew every corner of the estate and made the whole day feel effortless. Already planning my next Rishvel tour.",
+    "name": "Priya Menon",
+    "location": "Mumbai, India"
+  },
+  {
+    "id": "mysore-james-text",
+    "mediaType": "text",
+    "experiences": ["mysore"],
+    "showOnHomepage": true,
+    "quote": "We were visiting Bangalore for a conference and squeezed in the Mysore tour. It was the highlight of our entire trip. Seamlessly organised from start to finish.",
+    "name": "James Whitfield",
+    "location": "London, UK"
+  },
+  {
+    "id": "nandi-arjun-text",
+    "mediaType": "text",
+    "experiences": ["nandi-hills"],
+    "showOnHomepage": true,
+    "quote": "Nandi Hills at sunrise was breathtaking. Rishvel handled everything — pickup, breakfast, the works. This is how day tours should be done.",
+    "name": "Arjun Sharma",
+    "location": "Bangalore, India"
+  },
+  {
+    "id": "coorg-ig-1",
+    "mediaType": "video",
+    "experiences": ["coorg"],
+    "showOnHomepage": true,
+    "url": "https://www.instagram.com/reel/Dc48xLgyvL5/",
+    "name": "Himanshu Sharma",
+    "handle": "@hsharmaxx"
+  },
+  {
+    "id": "coorg-ig-2",
+    "mediaType": "video",
+    "experiences": ["coorg"],
+    "showOnHomepage": true,
+    "url": "https://www.instagram.com/reel/Dc-WExOSmJ2/",
+    "name": "Himanshu Sharma",
+    "handle": "@hsharmaxx"
+  },
+  {
+    "id": "mysore-ig-1",
+    "mediaType": "video",
+    "experiences": ["mysore"],
+    "showOnHomepage": true,
+    "url": "https://www.instagram.com/reel/DdCDAYlSZ3T/",
+    "name": "Himanshu Sharma",
+    "handle": "@hsharmaxx"
+  },
+  {
+    "id": "mysore-ig-2",
+    "mediaType": "video",
+    "experiences": ["mysore"],
+    "showOnHomepage": true,
+    "url": "https://www.instagram.com/reel/DdLBvTGSIrI/",
+    "name": "Himanshu Sharma",
+    "handle": "@hsharmaxx"
+  }
+]
