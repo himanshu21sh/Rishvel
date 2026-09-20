@@ -174,7 +174,8 @@
   background: transparent !important;
 }
 
-.instagram-reel-frame iframe {
+.instagram-reel-frame iframe,
+.instagram-reel-frame .instagram-reel-iframe {
   position: absolute !important;
   top: 0 !important;
   left: 0 !important;
@@ -184,6 +185,17 @@
   max-width: 100% !important;
   border: 0 !important;
   display: block !important;
+}
+
+.video-review-instagram-link {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #c85a32;
+  text-decoration: none;
+}
+
+.video-review-instagram-link:hover {
+  text-decoration: underline;
 }
 
 .experience-detail-body {
