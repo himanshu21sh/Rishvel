@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experiences | Rishvel</title>
+  <meta name="description" content="Thoughtfully designed day journeys across India — curated routes, local hosts, and private travel. Explore all Rishvel experiences.">
+  <link rel="canonical" href="https://rishvel.com/experiences/">
+  <meta property="og:title" content="Experiences | Rishvel">
+  <meta property="og:description" content="Thoughtfully designed journeys across India, created around how you want to travel.">
+  <meta property="og:url" content="https://rishvel.com/experiences/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="/assets/js/tailwind-config.js"></script>
+  <link rel="stylesheet" href="/assets/css/experiences.css">
+</head>
+<body class="bg-brand-cream text-brand-dark font-sans antialiased">
+
+<header class="fixed top-0 left-0 right-0 z-50 bg-brand-cream/90 backdrop-blur-md border-b border-stone-200/60">
+  <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+    <a href="/" class="font-serif text-3xl font-bold tracking-tight text-brand-dark">
+      Rishvel<span class="text-brand-terracotta">.</span>
+    </a>
+    <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-stone-700">
+      <a href="/experiences/" class="text-brand-terracotta transition-colors">Experiences</a>
+      <a href="/#why-us" class="hover:text-brand-terracotta transition-colors">Why Rishvel</a>
+      <a href="/#stories" class="hover:text-brand-terracotta transition-colors">Stories</a>
+      <a href="/#contact" class="hover:text-brand-terracotta transition-colors">Contact</a>
+    </nav>
+    <a href="/#contact" class="bg-brand-dark text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-brand-terracotta transition-colors">
+      Enquire Now
+    </a>
+  </div>
+</header>
+
+<main class="pt-20">
+  <section class="py-16 md:py-24 max-w-7xl mx-auto px-6">
+    <span class="text-brand-terracotta font-semibold text-sm uppercase tracking-wider">Rishvel</span>
+    <h1 class="font-serif text-4xl md:text-6xl font-bold mt-2 mb-4">Experiences</h1>
+    <p class="text-brand-muted text-lg max-w-2xl leading-relaxed">
+      Thoughtfully designed journeys across India, created around how you want to travel.
+    </p>
+
+    <div class="mt-10 flex flex-col sm:flex-row gap-4">
+      <label class="flex-1">
+        <span class="sr-only">Search experiences</span>
+        <input type="search" id="experiences-search" placeholder="Search by destination or keyword…" class="w-full px-5 py-3.5 rounded-xl border border-stone-300 bg-white focus:outline-none focus:ring-2 focus:ring-brand-terracotta">
+      </label>
+    </div>
+
+    <p id="experiences-filter-note" class="hidden text-sm text-brand-muted mt-4"></p>
+
+    <div id="experiences-filters" class="flex flex-wrap gap-2 mt-6"></div>
+
+    <div id="experiences-catalog" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+      <p class="text-brand-muted text-sm col-span-full">Loading experiences…</p>
+    </div>
+
+    <p id="experiences-empty" class="hidden text-center text-brand-muted py-16">No experiences match your search. Try another keyword or category.</p>
+  </section>
+</main>
+
+<footer class="bg-brand-dark text-stone-400 py-16 border-t border-stone-800">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+    <div>
+      <a href="/" class="font-serif text-3xl font-bold text-white tracking-tight mb-4 block">
+        Rishvel<span class="text-brand-terracotta">.</span>
+      </a>
+      <p class="text-sm leading-relaxed">Curated day experiences across India. We handle everything — you just show up and explore.</p>
+    </div>
+    <div>
+      <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Experiences</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="/experiences/nandi-hills/" class="hover:text-white transition-colors">Nandi Hills Sunrise</a></li>
+        <li><a href="/experiences/coorg/" class="hover:text-white transition-colors">Coorg Day Experience</a></li>
+        <li><a href="/experiences/mysore/" class="hover:text-white transition-colors">Mysore Heritage</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Company</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="/#why-us" class="hover:text-white transition-colors">About Rishvel</a></li>
+        <li><a href="/#contact" class="hover:text-white transition-colors">Contact Us</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Get in Touch</h4>
+      <ul class="space-y-2 text-sm">
+        <li>Bangalore, Karnataka, India</li>
+        <li><a href="mailto:contact@rishvel.com" class="text-brand-terracotta hover:underline">contact@rishvel.com</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="max-w-7xl mx-auto px-6 pt-8 border-t border-stone-800 text-xs text-stone-500">
+    <p>&copy; 2026 Rishvel. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="/assets/js/experiences-data.js"></script>
+<script src="/assets/js/experiences.js"></script>
+</body>
+</html>
